@@ -1,0 +1,71 @@
+
+// Alignment
+
+.center {
+  text-align : center;
+}
+
+.right {
+  text-align : right;
+}
+
+.left {
+  text-align : left;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.flex-right {
+  @include flex-right;
+}
+
+.flex-left {
+  @include flex-left;
+}
+
+// Backgrounds
+
+.bg-primary {
+  color            : $primary-color;
+  background-color : $primary-shade;
+}
+
+.bg-secondary {
+  color            : $secondary-shade;
+  background-color : $secondary-color;
+}
+
+.bg-shade {
+  color            : $primary-shade;
+  background-color : $secondary-shade;
+}
+
+.bg-accent {
+  background-color : $accent-color;
+  h2, h3, p, span {
+    color            : #fff;
+
+  }
+}
+
+// Display
+.hide {
+  display   : none;
+}
+
+// Responsive image
+
+.responsive-img {
+  width             : 100%;
+  height            : 100%;
+  object-fit        : cover;
+  object-position   : center;
+}
+
+// Global Components
+.avatar {
+  width: 80px;
+  margin: auto;
+}

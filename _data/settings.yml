@@ -1,0 +1,57 @@
+# Basic settings
+basics:
+  site_title: SMART Startup Bootcamp
+  site_base_url: 'https://mysite.com'
+  site_logo_image: ''
+  site_thumb_image: ''
+  contact_email: 'example@me.com'
+  phone_number: "+555 555 5555"
+  address: Chiang Mai, Thailand
+social:
+  facebook_url: 'https://facebook.com'
+  instagram_url: 'https://instagram.com'
+  instagram_handle: '@yourhandle'
+  twitter_url: 'https://twitter.com'
+  twitter_handle: '@yourhandle'
+  youtube_url: 'https://youtube.com'
+  github_url: 'https://github.com'
+  linkedin_url: 'https://linkedin.com'
+  snapchat_url: 'https://snapchat.com'
+  stackoverflow_url: 'https://stackoverflow.com'
+navigation:
+  menu_1_url: /about
+  menu_2_url: /portfolio
+  menu_3_url: /blog
+  menu_4_url: /contact
+  menu_5_url:
+  menu_6_url:
+# Brand identity
+logos:
+  navbar_logo_image: ''
+  footer_logo_image: ''
+
+# Global colors. Put HEX values between quotes otherwise it will act as a comment in YAML
+colors:
+  primary_color: "#f2f2f2"
+  secondary_color: "#555"
+  primary_shade_color: "#ffffff2e"
+  secondary_shade_color: "#565"
+  accent_color: "#1b4470"
+
+# Typography (can be customized to accomodate more styles like standard font sizes and line height)
+fonts:
+  fonts_code_block:  '<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">' # Place between single quotes
+  body_font_family: "'Lato', sans-serif;"
+  design_font_family: "'Lato', sans-serif;"
+
+seo:
+  fb_app_id: 123456789
+  keywords: [chiang mai, startup, thailand visa, thailand freelancer visa, thailand work visa, work visa thailand]
+  description: Live and work in Chiang Mai while you develop your new startup
+
+# Analytics & embeds
+configuration:
+  google_tag_manager_code_block:
+  google_analytics_code_block:
+  form_submission_handler_code_block:
+  flexbox_framework_code_block: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css">'

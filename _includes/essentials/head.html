@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %} {{page.title}} {% else %} {{site.data.settings.basics.site_title}} {% endif %} </title>
+  <meta name="viewport" content="width=device-width">
+  {% include essentials/og.html %}
+
+  <!-- Google Fonts embed code -->
+  {{site.data.settings.fonts.fonts_code_block}}
+  <!-- End of Google Fonts embed code -->
+  <!-- Flexbox framework -->
+  {{site.data.settings.configuration.flexbox_framework_code_block}}
+  <!-- End of Flexbox framework -->
+  <!-- Google Analytics -->
+  {{site.data.settings.configuration.google_analytics_code_block}}
+  <!-- End of Google Analytics -->
+  <link rel="stylesheet" href="/styles/aos.css">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>

@@ -1,0 +1,48 @@
+.details-content,
+.mentors {
+  width: 100%;
+  border-radius: 10px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+
+.program-requirements {
+  border-radius: 30px;
+}
+
+.details-content {
+  padding: 2rem 4rem;
+  border: 3px solid $accent-color;
+  p,
+  h2,
+  h3,
+  li,
+  ul,
+  ol,
+  span {
+    color: $secondary-color;
+  }
+  &:nth-of-type(even) {
+    border-color: #ffae0a;
+  }
+}
+
+// .info-box {
+//   width: 80%;
+// }
+
+.mentors {
+  .mentor-avatar {
+    width: 180px;
+    height: 180px;
+    margin: auto;
+    margin-bottom: 1rem;
+    .responsive-img-container img {
+      border-radius: 20px;
+    }
+  }
+  .mentor-card {
+    padding: 1.5rem;
+  }
+}

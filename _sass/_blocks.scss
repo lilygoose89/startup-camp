@@ -1,0 +1,57 @@
+
+.illustrated-quote,
+.quote-content {
+  position    : relative;
+}
+
+.large-image {
+  width      : 50%;
+  height     : 100vh;
+}
+
+.quote-box {
+  position: absolute;
+  display: inline-block;
+  width: 50%;
+  right: 15%;
+  top: 25%;
+  padding: 5%;
+}
+
+.quote-name {
+  transform: translate(15rem, 8rem);
+  h3 {
+    font-size: 4rem;
+    margin: 0;
+  }
+}
+.quote-content {
+  p {
+    font-size: 2rem;
+  }
+}
+
+.highlight-container {
+  position: relative;
+  height: auto;
+  margin: auto;
+}
+
+.highlight-overlay {
+  display: none;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  content: "";
+  top: 0;
+  left: 0;
+  background-color: rgba(255,255,255,0.5);
+  transition: 0.3s all;
+}
+
+.highlight-container:hover {
+  .highlight-overlay {
+    display: flex;
+    transition: 0.3s all;
+  }
+}

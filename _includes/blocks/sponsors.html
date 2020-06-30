@@ -1,0 +1,16 @@
+<section class="sponsors padding-lg center">
+  <h2 class="editable">Created in Partnership</h2>
+  <p class="editable">
+    This Startup Bootcamp program is approved and supervised by the National Innovation Agency of Thailand. This public-private partnership is created in collaboration by these agencies and organizations.
+  </p>
+  <div class="grid-noGutter-spaceBetween">
+    {% for partner in page.partners %}
+    <div class="col-2_md-4_sm-6">
+      <div class="partner-logo flex-center">
+        <img src="{{partner.logo_image}}" alt="">
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  <a href="/about" class="btn">About Us</a>
+</section>

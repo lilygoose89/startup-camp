@@ -1,0 +1,31 @@
+.cta-container {
+  background-color: $accent-color;
+  width: 100%;
+  margin: auto;
+  border-radius: 30px;
+  p {
+    width:80%;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  p,
+  h2,
+  h3,
+  span {
+    color: $primary-color;
+  }
+}
+
+#message-form {
+  input,
+  button,
+  textarea {
+    border: none;
+    display: block;
+    padding: 1rem;
+    width: 60%;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}

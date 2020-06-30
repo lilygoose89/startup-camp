@@ -1,0 +1,6 @@
+{% capture srcset %}
+{% for i in resized %}
+/{{ i.path | replace: "jpg" , "webp" }} {{ i.width }}w,
+{% endfor %}
+{% endcapture %}
+<source srcset="{{ srcset | strip_newlines }} /{{ path | replace: "jpg" , "webp" }} {{ original.width }}w" type="image/webp">

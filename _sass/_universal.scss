@@ -1,0 +1,113 @@
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $primary-color;
+}
+
+header {
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+}
+
+
+// Typography
+h1,
+h2,
+h3 {
+  font-family     : $heading-font-family;
+  margin-bottom   : $heading-default-bottom-margin;
+}
+
+h1 {
+  font-size       : 4rem;
+  text-transform  : uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size     : 3rem;
+}
+
+h3 {
+  font-size     : 2rem;
+}
+
+a {
+  font-family   : inherit;
+}
+
+p,
+ol,
+ul,
+li,
+span,
+a {
+  font-family    : $body-font-family;
+  font-size      : 1.2rem;
+  line-height    : 1.5;
+}
+
+ol,
+ul {
+  list-style-position: inside;
+  font-weight: 600;
+  li {
+    font-weight: 400;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a,
+blockquote,
+cite,
+ul,
+ol,
+li,
+span {
+  color: $secondary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ol,
+ul {
+  margin-bottom: 2rem;
+}
+
+input,
+button,
+textarea {
+  border: none;
+  padding: 1rem;
+  width: 350px;
+  font-size: 1.2rem;
+  &::placeholder {
+    font-family: $body-font-family;
+  }
+}
+
+button {
+  color: $primary-color;
+  // margin: 1rem auto;
+}
+
+input {
+  // border-radius: 30px;
+  margin: auto;
+  margin-bottom: 1rem;
+  // display: block;
+}
+
+// Paddings

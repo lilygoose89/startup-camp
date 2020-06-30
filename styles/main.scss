@@ -1,0 +1,40 @@
+---
+---
+// Main SCSS file
+// Check the README file for information on how to edit
+// Edit your 'resets', 'utilities' and 'universal' styles in the _sass directory
+
+@import '_resets';
+
+// Sass variables
+// Sass global variables must come BEFORE partials that use them and declared on the 'main.scss' file
+$primary-color                   : {{site.data.settings.colors.primary_color}};
+$primary-shade                   : {{site.data.settings.colors.primary_shade_color}};
+$secondary-color                 : {{site.data.settings.colors.secondary_color}};
+$secondary-shade                 : {{site.data.settings.colors.secondary_shade_color}};
+$accent-color                    : {{site.data.settings.colors.accent_color}};
+$body-font-family                : {{site.data.settings.fonts.body_font_family}};
+$heading-font-family             : {{site.data.settings.fonts.design_font_family}};
+$heading-default-bottom-margin   : 2rem;
+$gallery-padding                 : 1.5rem;
+
+// Sass partials
+// Add necessary partials from here onwards
+@import
+  '_mixins',
+  '_universal',
+  '_utility',
+  '_padding',
+  '_containers',
+  '_buttons',
+  '_nav',
+  '_footer',
+  '_blocks',
+  '_milestones',
+  '_program-details',
+  '_highlights',
+  '_application',
+  '_cta',
+  '_media-queries';
+
+  // Alternatively, write your CSS/SCSS from here onwards

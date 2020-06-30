@@ -1,0 +1,37 @@
+
+// Paddings
+
+header {
+  padding: 1% 8% ;
+}
+
+.padding-lg {
+  padding : 3% 12%;
+}
+
+.padding-md {
+  padding : 3% 5%;
+}
+
+.padding-sm {
+  padding : 2%;
+}
+
+// Gallery-specific padding
+
+.padding-gallery {
+  padding : $gallery-padding;
+}
+
+.gallery-main {
+  padding-right     : calc(#{$gallery-padding / 2});
+}
+
+.gallery-md-top {
+  padding-left      : calc(#{$gallery-padding / 2});
+  padding-bottom    : calc(#{$gallery-padding / 2});
+}
+.gallery-md-bottom {
+  padding-left      : calc(#{$gallery-padding / 2});
+  padding-top       : calc(#{$gallery-padding / 2});
+}

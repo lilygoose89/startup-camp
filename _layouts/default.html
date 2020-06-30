@@ -1,0 +1,24 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% include essentials/head.html %}
+  <body>
+    {% include essentials/header.html %}
+
+    {{ content }}
+
+    {% for section in page.sections %}
+    {% case section._id %}
+      {% when '2_image_grid' %}
+        {%include blocks/2-image-grid.html section=section %}
+      {% when '3_image_gallery' %}
+        {%include blocks/3-image-gallery.html section=section %}
+    {% endcase %}
+    {% endfor %}
+
+    {% include essentials/footer.html %}
+    {% include essentials/scripts.html %}
+  </body>
+</html>

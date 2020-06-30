@@ -1,0 +1,21 @@
+
+<div class="responsive-img-container">
+  <picture>
+      {% capture srcset %}
+      {% for i in resized %}
+      /{{ i.path | replace: "jpg" , "webp" }} {{ i.width }}w,
+      {% endfor %}
+      {% endcapture %}
+    <source data-srcset="{{ srcset | strip_newlines }} /{{ path | replace: "jpg" , "webp" }} {{ original.width }}w" type="image/webp">
+      {% capture srcset %}
+      {% for i in resized %}
+      /{{ i.path }} {{ i.width }}w,
+      {% endfor %}
+      {% endcapture %}
+    <source data-srcset="{{ srcset | strip_newlines }} /{{ path }} {{ original.width }}w" type="image/jpg">
+    <img data-src="/{{ path }}" alt="{{ alt }}" class="responsive-img lazyload" >
+  </picture>
+</div>
+
+
+<!-- You can add a specific class to the image which will render with every <picture> block using this template -->

@@ -1,0 +1,45 @@
+url: 'https://mysite.com/'
+
+# Enable CloudCannon UI
+cloudcannon:
+  data: true
+
+# Sass partials directory
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Collections configurations
+collections:
+  pages:
+    output: true
+    permalink: /:title
+
+# Plugins installed
+plugins:
+  - jekyll-sitemap
+  - jekyll-responsive-image
+  - jekyll-webp
+
+# Configuration of the jekyll-responsive-image plugin
+responsive_image:
+  template: _includes/templates/image-tag-lazy.html
+  sizes:
+    - width: 360
+    - width: 480
+    - width: 600
+    - width: 800
+    - width: 1400
+  base_path: assets/images
+  output_path_format: assets/images/srcset/%{width}/%{basename}
+
+# Configuration for the WebP Generator Plugin
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["/assets/images/"]
+  nested: true
+
+# Configuration of the compress_html layout
+compress_html:
+  comments: all # Removes all comments; remove this line to enable comments in production site
