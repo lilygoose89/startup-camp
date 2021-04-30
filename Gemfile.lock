@@ -29,10 +29,6 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
-    jekyll-archives (2.2.1)
-      jekyll (>= 3.6, < 5.0)
-    jekyll-feed (0.13.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-responsive-image (1.5.5)
       jekyll (>= 2.0, < 5.0)
       rmagick (>= 2.0, < 5.0)
@@ -58,7 +54,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rmagick (4.1.2)
     rouge (3.18.0)
     safe_yaml (1.0.5)
@@ -73,8 +69,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 4.0.0)
-  jekyll-archives (= 2.2.1)
-  jekyll-feed
   jekyll-responsive-image (= 1.5.5)
   jekyll-sitemap
   jekyll-webp (= 1.0.0)
